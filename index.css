@@ -1,0 +1,248 @@
+#all-container {
+  display: none;
+}
+
+.fondo-boton {
+  position: fixed;
+  top: 0; /* Coloca el fondo en la parte superior */
+  left: 0; /* Coloca el fondo en el lado izquierdo */
+  width: 100%; /* Ocupa toda la anchura disponible */
+  height: 100%; /* Ocupa toda la altura disponible */
+  background-image: url('images/sobre-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+
+#mostrar-formulario-btn {
+  background-color: red;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 490px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Alineación centrada para todo el contenido */
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.encabezado,
+.lugares,
+.resto {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+#countdown {
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+
+.encabezado {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/encabezado.jpg') center center;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeInUp 1.5s ease-in-out;
+  margin-bottom: 20px;
+  /* Ajusta según tus necesidades */
+  height: 400px;
+}
+
+.lugares {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/localizaciones.jpg') center center;
+  margin-bottom: 10px;
+  /* Ajusta según tus necesidades */
+  margin-top: 10px;
+  /* Ajusta según tus necesidades */
+  max-height: 550px;
+  /* Altura máxima cuando está abierto */
+  min-height: 200px;
+  /* Altura mínima cuando está cerrado */
+}
+
+.resto {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/catering.jpg') center center;
+  margin-top: 20px;
+  /* Ajusta según tus necesidades */
+  height: 400px;
+}
+
+.informacion-lugar {
+  margin-bottom: 20px;
+  /* Ajusta según tus necesidades */
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#pareja {
+  animation: fadeIn 1.5s ease-in-out;
+  /* Añade la animación de rotación */
+}
+
+@keyframes rotateIn {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.localizaciones {
+
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Alineación centrada para todo el contenido */
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  background: url('images/fondo.jpg') center center fixed;
+  background-size: cover;
+
+}
+
+#lugar {
+  width: 300px;
+}
+
+#localizacion {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+
+}
+
+h1 {
+  text-align: center;
+  /* Alineación centrada para el encabezado */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 80%;
+  /* Ajusta el ancho del formulario para pantallas más pequeñas */
+  max-width: 600px;
+  /* Establece un ancho máximo para evitar que el formulario sea demasiado ancho */
+  margin: 50px auto;
+  /* Centra el formulario en la pantalla */
+}
+
+input,
+select,
+textarea {
+  font-family: "Dancing Script", cursive;
+  resize: none;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: hsl(41, 100%, 94%);
+}
+
+#autobuses-detalle {
+  text-align: center;
+  margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 0 10px;
+}
+
+.opcion-container {
+  display: inline-block;
+}
+
+#pareja {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  mask-image: radial-gradient(circle at center, white 0%, transparent 70%);
+  display: block;
+  border-radius: 50%;
+  margin: 20px auto;
+  /* Centra la imagen */
+}
+
+#capilla {
+  width: 250px;
+  border-radius: 3%;
+}
+
+#point {
+  width: 25px;
+}
+
+#countdown {
+  margin-top: -20px;
+  /* Ajusta la separación entre el countdown y la imagen */
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Consulta de medios para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  form {
+    width: 90%;
+    /* Ajusta el ancho del formulario para pantallas aún más pequeñas */
+  }
+}
