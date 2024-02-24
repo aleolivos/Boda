@@ -17,7 +17,7 @@
 
 
 #mostrar-formulario-btn {
-  background-color: blue;
+  background-color: red;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -244,5 +244,16 @@ button:hover {
   form {
     width: 90%;
     /* Ajusta el ancho del formulario para pantallas aún más pequeñas */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Ajustes para dispositivos móviles */
+  #mostrar-formulario-btn {
+    margin-top: 30%;
+  }
+
+  form {
+    width: 90%;
   }
 }
