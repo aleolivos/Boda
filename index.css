@@ -51,17 +51,26 @@ body {
   padding: 0;
 }
 
+.encabezado h1 {
+  color: rgb(174, 148, 0); /* Establece el color de las letras como dorado */
+}
+
+
 h1 {
   animation: slideInFromLeft 1.5s ease-in-out;
+  margin-top: 50px;
 }
 
 #countdown {
   animation: slideInFromRight 1.5s ease-in-out;
+  margin-top: 175px;
+  font-size: 30px;
+  color: rgb(174, 148, 0); /* Establece el color de las letras como dorado */
 }
 
 
 .encabezado {
-  background-image:  url('images/fondo-bali.jpeg');
+  background-image:  url('images/fondo-bali2.jpeg');
   overflow-y: auto;
   position: relative;
   animation: fadeInUp 1.5s ease-in-out;
@@ -71,19 +80,29 @@ h1 {
   height: 100vh;
   /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
   background-size: cover;
+  color:#efb810 ;
 }
 
+.texto {
+  background-image: url('images/texto.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+  /* Ajusta el ancho al 100% del ancho de la ventana del navegador */
+  width: 100%;
+  /* Ajusta la altura al 100% de la altura de la ventana del navegador */
+  height: 100vh;
+}
 
-.lugares {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/localizaciones.jpg') center center;
-  margin-bottom: 10px;
-  /* Ajusta según tus necesidades */
-  margin-top: 10px;
-  /* Ajusta según tus necesidades */
-  max-height: 550px;
-  /* Altura máxima cuando está abierto */
-  min-height: 200px;
-  /* Altura mínima cuando está cerrado */
+.texto {
+  background-image: url('images/texto.png');
+  background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 200px; /* Establece la altura del contenedor */
 }
 
 .resto {
@@ -233,12 +252,6 @@ td {
 
 #point {
   width: 25px;
-}
-
-#countdown {
-  margin-top: -20px;
-  /* Ajusta la separación entre el countdown y la imagen */
-  font-size: 30px;
 }
 
 button:hover {
