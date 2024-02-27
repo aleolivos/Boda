@@ -61,14 +61,18 @@ h1 {
 
 
 .encabezado {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/encabezado.jpg') center center;
+  background-image:  url('images/fondo-bali.jpeg');
   overflow-y: auto;
   position: relative;
   animation: fadeInUp 1.5s ease-in-out;
   margin-bottom: 20px;
-  /* Ajusta según tus necesidades */
-  height: 400px;
+  /* Establece el ancho y la altura al 100% de la ventana del navegador */
+  width: 100vw;
+  height: 100vh;
+  /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+  background-size: cover;
 }
+
 
 .lugares {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('images/localizaciones.jpg') center center;
