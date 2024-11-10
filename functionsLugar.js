@@ -6,10 +6,10 @@ function mostrarInformacionLugar(lugarSeleccionado) {
     var imagenLugar = document.getElementById('capilla');
 
     if (lugarSeleccionado === 'iglesia') {
-        nombreLugar.textContent = 'Capilla de los Marineros';
-        direccionLugar.textContent = 'C. Pureza, 57, 41010 Sevilla';
-        mapaLugar.href = 'https://maps.app.goo.gl/unJi5RoiSkgauG8e6';
-        imagenLugar.src = 'images/capilla.jpg';
+        nombreLugar.textContent = 'Parroquia de Nuestra Señora de los Dolores';
+        direccionLugar.textContent = 'Calle Ntra. Sra. de los Dolores, 72, 41006 Sevilla';
+        mapaLugar.href = 'https://maps.app.goo.gl/UMiEKhfKHVnszDjk9';
+        imagenLugar.src = 'images/dolores.jpg';
     } else {
         nombreLugar.textContent = 'Hacienda La Bodeguilla';
         direccionLugar.textContent = 'A-8052, km. 1, 8, 41927 Bollullos de la Mitación, Sevilla';
